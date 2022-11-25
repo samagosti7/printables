@@ -25,8 +25,8 @@ class Issue(models.Model):
     def __str__(self):
         return self.issue
 
-    def __get_description__(self):
-        return self.description
+    def __get_text__(self):
+        return self.text
 
 
 class Newsletter(models.Model):
