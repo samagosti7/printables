@@ -1,4 +1,5 @@
 from django.contrib import admin
+from .models import Newsletter, Contact
 
 # Register your models here.
 
@@ -29,3 +30,7 @@ class ContactAdmin(admin.ModelAdmin):
     order_by = (
         'date',
     )
+
+
+admin.site.register(Newsletter, NewsletterAdmin)
+admin.site.register(Contact, ContactAdmin)
