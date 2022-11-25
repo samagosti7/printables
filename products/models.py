@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -31,3 +32,11 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ProductComplaint(models.Model):
+    product = models.ForeignKey(Product, related_name="complaints", on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name="complaints", on_delete=models.CASCADE)
+
+    content = models.TextField(blank=True, null=True)
+    
