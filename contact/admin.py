@@ -9,10 +9,12 @@ class NewsletterAdmin(admin.ModelAdmin):
     list_display = (
         'email', 'date',
     )
+
     search_fields = (
         'email', 'date',
     )
-    order_by = (
+
+    ordering = (
         'date',
     )
 
@@ -20,14 +22,14 @@ class NewsletterAdmin(admin.ModelAdmin):
 class ContactAdmin(admin.ModelAdmin):
 
     list_display = (
-        'name', 'email', 'issue',
+        'full_name', 'email', 'issue',
     )
 
     search_fields = (
-        'name', 'email', 'issue',
+        'full_name', 'email', 'issue',
     )
 
-    order_by = (
+    ordering = (
         'date',
     )
 
