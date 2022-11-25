@@ -35,7 +35,7 @@
     "pk": 5,
     "model": "products.category",
     "fields": {
-      "name": "phone-cases",
+      "name": "phone_cases",
       "friendly_name": "Phone Cases"
     }
   },
