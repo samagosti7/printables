@@ -1,6 +1,5 @@
 from django import forms
-from .models import Contact, Issue, Newsletter
-from django.utils.translation import gettext_lazy as _
+from .models import Contact, Newsletter
 
 
 class ContactForm(forms.ModelForm):
@@ -10,23 +9,12 @@ class ContactForm(forms.ModelForm):
 
         model = Contact
 
-        fields = (
-            'full_name', 'email', 'content',
-        )
+        fields = '__all__'
 
-        labels = {
-            'full_name': _('Full Name'),
-            'email': _('E-mail address'),
-            'content': _('Select Issue:'),
-        }
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-        issue = Issue.objects.all()
-        issue_text = [(i.id, i.get_text()) for i in issue]
-
-        self.fields['issue'].choices = issue_text
+        # labels = {
+        #     'name': ('Full Name'),
+        #     'email': ('E-mail address'),
+        # }
 
 
 class NewsletterForm(forms.ModelForm):
@@ -35,6 +23,6 @@ class NewsletterForm(forms.ModelForm):
     class Meta:
         model = Newsletter
         fields = ['email', ]
-        labels = {
-            'email': 'E-mail Address'
-        }
+        # labels = {
+        #     'email': 'E-mail Address'
+        # }

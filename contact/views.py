@@ -6,32 +6,24 @@ from .models import Newsletter
 # Create your views here.
 
 
-def contact(request):
-    """Contact Page View"""
+def contact_us(request):
+    """ A view to handle the customer contact form """
+
+    form = ContactForm()
 
     if request.method == 'POST':
-        form = ContactForm(request.post)
+        form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.add_message(
-                request,
-                25,
-                "Your message has been sent. Thank you for you input!"
-            )
-            return redirect('contact')
-        else:
-            form = ContactForm()
-            messages.add_message(
-                request,
-                40,
-                "There was an error with your form, please try again."
-            )
+            messages.success(request, 'Thank you for contacting us. We will \
+                be in touch shortly.')
+            return redirect(reverse('contact_us'))
 
-        context = {
-            'form': form,
-        }
+    context = {
+        'form': form
+    }
 
-        return render(request, 'contact/contact.html', context)
+    return render(request, 'contact/contact_us.html', context)
 
 
 def newsletter(request):

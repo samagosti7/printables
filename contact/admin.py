@@ -14,24 +14,24 @@ class NewsletterAdmin(admin.ModelAdmin):
         'email', 'date',
     )
 
-    ordering = (
-        'date',
-    )
+    # ordering = (
+    #     'date',
+    # )
 
 
 class ContactAdmin(admin.ModelAdmin):
 
     list_display = (
-        'full_name', 'email', 'issue',
+        'name', 'email',
     )
 
     search_fields = (
-        'full_name', 'email', 'issue',
+        'name', 'email',
     )
 
-    ordering = (
-        'date',
-    )
+    # ordering = (
+    #     'date',
+    # )
 
 
 admin.site.register(Newsletter, NewsletterAdmin)
