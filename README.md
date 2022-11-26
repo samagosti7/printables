@@ -1,108 +1,391 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# E-Commerce Store
 
-Welcome samagosti7,
+## Introduction
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Welcome to my fifth project. This project is an e-commerce store for steak lovers. Users will be able to purchase steaks and steak related equipment from this website. This project will use languages and frameworks such as Django, Python, HTML, CSS and JavaScript.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+In this project, I will set up an authentication mechanism and provide access to the site's data for users to purchase a range of products.
 
-## Gitpod Reminders
+The admin of the website will also have the ability to use all CRUD functionality (Create, Read, Update, Delete).
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+A live website can be found [here](https://kelvin-steakout.herokuapp.com/).
 
-`python3 -m http.server`
+![website preview](documentation_assets/images/website_preview.png)
 
-A blue button should appear to click: _Make Public_,
+# Table of Contents
 
-Another blue button should appear to click: _Open Browser_.
+-   [1. UX](#ux)
+    -   [1.1. Strategy](#strategy)
+        -   [Project Goals](#project-goals)
+            -   [User Goals:](#user-goals)
+            -   [User Expectations:](#user-expectations)
+            -   [Trends of Modern Websites](#trends-of-modern-websites)
+            -   [Strategy Table](#strategy-table)
+    -   [1.2. Structure](#structure)
+    -   [1.3. Skeleton](#skeleton)
+    -   [1.4. Surface](#surface)
+-   [2. Features](#features)
+-   [3. Technologies Used](#technologies-used)
+-   [4. Testing](#testing)
+-   [5. Deployment](#deployment)
+-   [6. SEO](#seo)
+-   [7. Marketing](#marketing)
+-   [8. Social Media](#social-media)
+-   [9. End Product](#end-product)
+-   [10. Known Bugs](#known-bugs)
+-   [11. Credits](#credits)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<a name="ux"></a>
 
-A blue button should appear to click: _Make Public_,
+# 1. UX
 
-Another blue button should appear to click: _Open Browser_.
+[Go to the top](#table-of-contents)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Intro
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<a name="strategy"></a>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## 1.1. Strategy
 
-------
+[Go to the top](#table-of-contents)
 
-## Release History
+### Project Goals
+ - 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### User Goals:
+ - 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### User Expectations:
+ - 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### User Stories
+ - 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Strategy Table
+Opportunity/Problem/Feature| Importance| Viability/Feasibility
+------------ | -------------------------|---------
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Scope
+minimum viable product--extra
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Phase 1
+- 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Phase 2
+- 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<a name="structure"></a>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## 1.2. Structure
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+[Go to the top](#table-of-contents)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ - 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Database Model
+ - models
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<a name="skeleton"></a>
 
-------
+## 1.3. Skeleton
 
-## FAQ about the uptime script
+[Go to the top](#table-of-contents)
 
-**Why have you added this script?**
+### Wire-frames
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+<a name="surface"></a>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## 1.4. Surface
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+[Go to the top](#table-of-contents)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Colours
 
-**So….?**
+ - 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Typography
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<a name="features"></a>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+# 2. Features
 
-**Anything more?**
+[Go to the top](#table-of-contents)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### All Pages
 
----
+- 
 
-Happy coding!
+### Sign Up Page
+- 
+
+### Login Page
+- 
+
+### Logout Page
+- 
+
+### Landing Page
+- 
+### Products Page
+- 
+
+### Products Detail Page
+- 
+
+### Bag Page
+- 
+
+### Checkout Page
+- 
+
+### Checkout Success Page
+- 
+
+### User Profile Page
+- 
+
+### Product Management Page
+- 
+
+### Newsletter Subscribe Page
+- features
+
+### Newsletter Unsubscribe Page
+-
+
+<a name="technologies-used"></a>
+
+## 3. Technologies Used
+
+[Go to the top](#table-of-contents)
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML)
+    -   The project uses HyperText Markup Language.
+-   [CSS3](https://en.wikipedia.org/wiki/CSS)
+    -   The project uses Cascading Style Sheets.
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    -   The project uses JavaScript.
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+    -   The project uses Python.
+-   [Django](https://www.djangoproject.com/)
+    -   The project uses Django as the main framework.
+-   [Boostrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+    -   The project uses Bootstrap 4.
+-   [PostgreSQL](https://www.postgresql.org/)
+    -   The project uses PostgreSQL as a database.
+-   [AWS](https://aws.amazon.com/)
+    -   The project uses Amazon Web Services to host all static and media files.
+-   [Gitpod](https://www.gitpod.io/)
+    -   The project uses Gitpod.
+-   [Chrome](https://www.google.com/intl/en_uk/chrome/)
+    -   The project uses Chrome to debug and test the source code using HTML5.
+-   [Heroku](https://www.heroku.com/)
+    -   The project is deployed and hosted by Heroku.
+-   [Balsamiq](https://balsamiq.com/)
+    -   Balsamiq was used to create the wireframes during the design process.
+-   [Google Fonts](https://fonts.google.com/)
+    -   Google fonts were used to import the "Be Vietnam Pro" font into the style.css file which is used on all pages throughout the project.
+-   [GitHub](https://github.com/)
+    -   GitHub was used to store the project's code after being pushed from Git.
+
+<a name="testing"></a>
+
+# 4. Testing
+
+[Go to the top](#table-of-contents)
+### Responsive Tools
+responsive tools
+
+### W3C Validator Tools
+
+#### HTML:
+w3c markup validation
+
+#### CSS:
+w3c css validation
+
+### JavaScript:
+jshint valodation image
+
+### Python:
+I used the python3 -m flake8 command within GitPod to check for any errors within my Python files. The validator showed multiple "line too long" errors. This was rectified by adding each statement as a new line.
+
+There were also "line too long" errors within my settings.py file but I have chosen to ignore these as this is a very important file.
+
+## Manual Testing
+
+I have tested my site on Safari and google chrome on multiple devices.
+
+These include:
+-   
+
+### Navigation Bar
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+
+
+### Footer
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+
+### Home page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+
+### Products page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+
+### Products details page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+
+### Shopping bag page
+TEST            | OUTCOME                          | PASS / FAIL  
+
+
+### Checkout page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+
+
+### Checkout success page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+R
+
+
+
+<a name="deployment"></a>
+
+# 5. Deployment
+[Go to the top](#table-of-contents)
+
+I used the terminal to deploy my project locally. To do this I had to:
+
+1. Create a repository on GitHub.
+2. Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
+3. Open the terminal within GitPod
+4. Enter "python3 manage.py runserver into the terminal.
+5. Go to localhost address on my web browser.
+6. All locally saved changes will show up here.
+
+For the final deployment to Heroku, I had to:
+
+1. Create Heroku App
+2. Install dj_database_url and psycopg2-binary in my local environment
+3. Freeze requirements.txt file
+4. In settings.py import dj_database_url
+5. Back up the local database using "./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json" in the terminal window.
+6. Comment out the local default database
+7. Add the Heroku database url via dj_database_url.parse()
+8. Run migrations to the Postgres database
+9. Restore the database using this command "./manage.py loaddata db.json" in the terminal windows.
+10. Create a SuperUser for the Postgres database
+11. Configure the database so that when the app is running on Heroku it uses the Postgres database and when it's running locally it uses the SQLite database
+12. Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the Django app
+13. Disable Heroku collect static
+14. Add the Heroku hostname to allowed hosts in settings.py
+15. Generate a new Django secret key and add this to the Heroku config variables
+16. Replace the secret key in settings.py to grab it from the environment
+17. Set debug to True only if the environment is a development environment
+18. Commit changes and deploy to GitHub and Heroku
+19. Create an AWS account
+20. Create an S3 bucket
+21. Configure the S3 bucket settings and policies
+22. Create and configure the IAM service
+23. In the terminal install Boto3 and Django-storages
+24. Freeze requirements.txt file
+25. Add a statement to the AWS bucket if the environment is "USE_AWS"
+26. Add AWS keys to the Heroku config variables
+27. Create custom storage classes for media and static files
+28. In settings.py add a statement to use the static and media storage class and locations
+29. Commit and push to GitHub and Heroku
+30. In the S3 bucket create a new folder for media
+31. Upload all used images to the media file in the S3 bucket
+32. Add the Stripe keys to the Heroku config variables
+33. Create a new webhook endpoint from the Stripe dashboard
+34. Add all the Stripe keys to the Heroku config variables
+
+<a name="seo"></a>
+
+# 6. SEO
+[Go to the top](#table-of-contents)
+
+To improve the search engine optimisation (SEO) of the site I:
+
+- Added keywords in a meta tag to my base.html. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are a number of short-tail and long-tail keywords.
+
+
+- 
+
+I chose these keywords because they didn't have incredibly high volume and competition.
+
+
+<a name="marketing"></a>
+
+# 7. Marketing
+[Go to the top](#table-of-contents)
+
+Marketing
+
+- 
+
+
+<a name="social-media"></a>
+
+# 8. Social Media Business Page
+[Go to the top](#table-of-contents)
+
+pic of fake facebook page
+
+The business will use social media as a platform to promote the business.
+
+<a name="end-product"></a>
+
+# 9. End Product
+[Go to the top](#table-of-contents)
+
+images of end product
+
+
+<a name="known-bugs"></a>
+
+# 10. Known Bugs
+[Go to the top](#table-of-contents)
+
+- 
+
+<a name="credits"></a>
+
+# 11. Credits
+
+[Go to the top](#table-of-contents)
+
+### Code
+
+-
+
+
+### Content
+
+- All images on the site came from 
+
+
+
+### Project Acknowledgements
+-
