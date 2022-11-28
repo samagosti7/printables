@@ -3,17 +3,17 @@ html {
 }
 
 body {
-    /* background: url('/media/background_image.jpg') no-repeat center right fixed; */
-    /* background-size: 40%; */
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Nanum Gothic';
+    background-color: #F0A868;
 }
 
 /* Home */
 .home {
     background: url('/media/background_image.jpg') no-repeat center right fixed;
-    background-size: 50%
+    background-size: 50%;
+    /* height: 80%; */
 }
 
 @media (max-width: 767px) {
@@ -22,6 +22,13 @@ body {
         background-size:50%;
   }
 }
+@media (min-width: 1441px) {
+    .home {
+        background: none;
+        background-size:50%;
+  }
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -286,10 +293,12 @@ input[name='q']::placeholder {
         right: 0;
         left: 0;
         z-index: 1030;
+        /* background-color: #F0A868; */
     }
 
     .header-container {
         padding-top: 164px;
+        /* background-color: #F0A868; */
     }
 }
 
@@ -297,6 +306,7 @@ input[name='q']::placeholder {
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
+        /* background-color: #F0A868; */
     }
 
     body {
@@ -322,6 +332,7 @@ input[name='q']::placeholder {
 
     #delivery-banner h4 {
         font-size: .9rem;
+        
     }
 
     .btn.btn-outline-black.rounded-0,
@@ -342,8 +353,9 @@ input[name='q']::placeholder {
 
 /* footer */
 footer {
-    background-color: #0d67b5;
-    color: #fff;
+    background-color: #E4FFE1;
+    width: 100%
+    /* color: #fff; */
 }
 
 footer ul {
