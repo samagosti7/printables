@@ -82,5 +82,89 @@
       "image_url": "https://t3.ftcdn.net/jpg/00/51/18/14/240_F_51181462_u0OutxIEFpoQy8iPzOaF4EZMaYiJCRnw.jpg",
       "image": "black_wallet.jpg"
     }
-  }  
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "aa0000000007",
+      "name": "Black t-shirt",
+      "description": "This is a black T-shirt, the front is customizable.",
+      "price": 5.00,
+      "category": 1,
+      "rating": 5,
+      "image_url": "https://cdn.pixabay.com/photo/2013/11/28/11/29/t-shirt-220192_1280.jpg",
+      "image": "black_tshirt.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "aa0000000008",
+      "name": "Black sweatshirt",
+      "description": "This is a black sweatshirt, the back is customizable.",
+      "price": 5.00,
+      "category": 2,
+      "rating": 5,
+      "image_url": "https://t4.ftcdn.net/jpg/02/61/27/59/240_F_261275920_1GwcUcuoXysnoHf8b3GwUrNckPu6Dz54.jpg",
+      "image": "black_sweat.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "aa0000000009",
+      "name": "Black Mug",
+      "description": "This is a black mug.",
+      "price": 5.00,
+      "category": 3,
+      "rating": 5,
+      "image_url": "https://t4.ftcdn.net/jpg/01/05/37/11/240_F_105371111_whd0jBCspSHmn3Y4TaQa4JIPwk2N4Ziq.jpg",
+      "image": "black_mug.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "aa0000000010",
+      "name": "Black Plate",
+      "description": "This is a black plate.",
+      "price": 5.00,
+      "category": 4,
+      "rating": 5,
+      "image_url": "https://images.unsplash.com/photo-1608930908433-b69f24f3f7a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBwbGF0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "image": "black_plate.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "aa0000000011",
+      "name": "Black Phone Case",
+      "description": "This is a black phone case.",
+      "price": 5.00,
+      "category": 5,
+      "rating": 5,
+      "image_url": "https://images.unsplash.com/photo-1587014240842-7ea4b3674a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHxibGFjayUyMHBob25lJTIwY2FzZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "image": "black_phone_case.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "aa0000000012",
+      "name": "Brown Wallet",
+      "description": "This is a brown wallet.",
+      "price": 5.00,
+      "category": 6,
+      "rating": 5,
+      "image_url": "https://images.unsplash.com/photo-1606503825008-909a67e63c3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+      "image": "brown_wallet.jpg"
+    }
+  }
 ]
