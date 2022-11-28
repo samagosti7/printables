@@ -4,12 +4,24 @@ html {
 
 body {
     /* background: url('/media/background_image.jpg') no-repeat center right fixed; */
-    background-size: 60%;
+    /* background-size: 40%; */
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Nanum Gothic';
 }
 
+/* Home */
+.home {
+    background: url('/media/background_image.jpg') no-repeat center right fixed;
+    background-size: 50%
+}
+
+@media (max-width: 767px) {
+    .home {
+        background: none;
+        background-size:50%;
+  }
+}
 /* from Bulma */
 .icon {
     align-items: center;
