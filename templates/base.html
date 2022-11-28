@@ -151,6 +151,14 @@
     {% block content %}
     {% endblock %}
 
+
+    
+
+    {% block postloadjs %}
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
+    {% endblock %}
     <footer>
         <ul>
                 <li>
@@ -166,13 +174,6 @@
                     <a href="https://www.youtube.com" target=_blank rel="noopener" aria-label="Visit our Youtube (opens in a new tab)"><i class="fab fa-youtube"></i></a>
                 </li>
             </ul>
-
-    {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
-    {% endblock %}
-
-    
+    </footer>
   </body>
 </html>
