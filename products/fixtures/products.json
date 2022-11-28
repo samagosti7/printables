@@ -10,7 +10,8 @@
       "category": 1,
       "rating": 5,
       "image_url": "https://goop-img.com/wp-content/uploads/2022/04/g.png",
-      "image": "white_tshirt.jpg"
+      "image": "white_tshirt.jpg",
+      "preview_image": "white_tshirt_preview.jpg"
     }
   },
   {
@@ -24,7 +25,8 @@
       "category": 2,
       "rating": 5,
       "image_url": "https://i1.t4s.cz/products/2072103-011/404660-960.webp",
-      "image": "white_sweatshirt.jpg"
+      "image": "white_sweatshirt.jpg",
+      "preview_image": "white_sweatshirt_preview.jpg"
     }
   },
   {
@@ -38,7 +40,8 @@
       "category": 3,
       "rating": 5,
       "image_url": "https://as1.ftcdn.net/jpg/01/50/89/34/160_F_150893494_E1VwqwewdTvEVTZINstJlkMf8aeyJLkO.jpg",
-      "image": "white_mug.jpg"
+      "image": "white_mug.jpg",
+      "preview_image": "white_mug_preview.jpg"
     }
   },
   {
@@ -52,7 +55,8 @@
       "category": 4,
       "rating": 5,
       "image_url": "https://t3.ftcdn.net/jpg/02/29/25/32/240_F_229253290_HoKE8HRTmtZpQS2yCCHgqX0zhTsvX73e.jpg",
-      "image": "white_plate.jpg"
+      "image": "white_plate.jpg",
+      "preview_image": "white_plate_preview.jpg"
     }
   },
   {
@@ -66,7 +70,8 @@
       "category": 5,
       "rating": 5,
       "image_url": "https://as1.ftcdn.net/v2/jpg/04/17/67/48/1000_F_417674862_h3RoDMAUSJxrTrD6JkJjp5Io9E2UTLO1.jpg",
-      "image": "white_phone_case.jpg"
+      "image": "white_phone_case.jpg",
+      "preview_image": "white_phone_case_preview.jpg"
     }
   },
   {
@@ -80,7 +85,8 @@
       "category": 6,
       "rating": 5,
       "image_url": "https://t3.ftcdn.net/jpg/00/51/18/14/240_F_51181462_u0OutxIEFpoQy8iPzOaF4EZMaYiJCRnw.jpg",
-      "image": "black_wallet.jpg"
+      "image": "black_wallet.jpg",
+      "preview_image": "black_wallet_preview.jpg"
     }
   },
   {
@@ -94,7 +100,8 @@
       "category": 1,
       "rating": 5,
       "image_url": "https://cdn.pixabay.com/photo/2013/11/28/11/29/t-shirt-220192_1280.jpg",
-      "image": "black_tshirt.jpg"
+      "image": "black_tshirt.jpg",
+      "preview_image": "black_tshirt_preview.jpg"
     }
   },
   {
@@ -108,7 +115,8 @@
       "category": 2,
       "rating": 5,
       "image_url": "https://t4.ftcdn.net/jpg/02/61/27/59/240_F_261275920_1GwcUcuoXysnoHf8b3GwUrNckPu6Dz54.jpg",
-      "image": "black_sweat.jpg"
+      "image": "black_sweatshirt.jpg",
+      "preview_image": "black_sweatshirt_preview.jpg"
     }
   },
   {
@@ -122,7 +130,8 @@
       "category": 3,
       "rating": 5,
       "image_url": "https://t4.ftcdn.net/jpg/01/05/37/11/240_F_105371111_whd0jBCspSHmn3Y4TaQa4JIPwk2N4Ziq.jpg",
-      "image": "black_mug.jpg"
+      "image": "black_mug.jpg",
+      "preview_image": "black_mug_preview.jpg"
     }
   },
   {
@@ -136,7 +145,8 @@
       "category": 4,
       "rating": 5,
       "image_url": "https://images.unsplash.com/photo-1608930908433-b69f24f3f7a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBwbGF0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-      "image": "black_plate.jpg"
+      "image": "black_plate.jpg",
+      "preview_image": "black_plate_preview.jpg"
     }
   },
   {
@@ -150,7 +160,8 @@
       "category": 5,
       "rating": 5,
       "image_url": "https://images.unsplash.com/photo-1587014240842-7ea4b3674a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHxibGFjayUyMHBob25lJTIwY2FzZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-      "image": "black_phone_case.jpg"
+      "image": "black_phone_case.jpg",
+      "preview_image": "black_phone_case_preview.jpg"
     }
   },
   {
@@ -164,7 +175,8 @@
       "category": 6,
       "rating": 5,
       "image_url": "https://images.unsplash.com/photo-1606503825008-909a67e63c3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
-      "image": "brown_wallet.jpg"
+      "image": "brown_wallet.jpg",
+      "preview_image": "brown_wallet_preview.jpg"
     }
   }
 ]

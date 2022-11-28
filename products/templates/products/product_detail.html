@@ -15,9 +15,22 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
+                    <p>Original Product</p>
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="image-container my-5">
+                    <p>Product Customization Preview</p>
+                    {% if product.image_preview %}
+                        <a href="{{ product.image_preview.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ product.image_preview.url }}" alt="{{ product.name }}">
                         </a>
                         {% else %}
                         <a href="">

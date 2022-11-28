@@ -9,5 +9,4 @@ urlpatterns = [
     path('delete/<int:product_id>/',
          views.delete_product,
          name='delete_product'),
-    # path('complaint', views.product_complaint, name='product_complaint')
 ]
