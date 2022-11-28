@@ -7,11 +7,11 @@ from .models import Newsletter, Contact
 class NewsletterAdmin(admin.ModelAdmin):
 
     list_display = (
-        'email', 'date',
+        'email',  # 'date',
     )
 
     search_fields = (
-        'email', 'date',
+        'email',  # 'date',
     )
 
     # ordering = (

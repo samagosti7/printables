@@ -19,17 +19,19 @@
                 <hr>
                 <h2 class="logo-font my-4 text-center">Subscibe to our Newsletter!</h2>
                 <hr>
-                <p class="text-center">Be the first to receive the latest top tips and deals.</p>
+                <p class="text-center">Hear about weekly promotions, popular used images for customization, and be the frist to know when new products arrive.</p>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-12 mx-auto py-5">
+                <div class="col-md-3 col-8 mx-auto">
                     <form action="" method="POST">
                         {% csrf_token %}
                         {{ form|crispy }}
-                        <input type="submit" class="btn btn-blue">
+                        <button>
+                            Submit
+                        </button>
                     </form>
                 </div>
             </div>

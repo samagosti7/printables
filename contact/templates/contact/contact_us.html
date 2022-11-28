@@ -2,34 +2,45 @@
 {% load static %}
 
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
 
+            </div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}
-    <hr>
-    <h2 class="logo-font mb-4">We'd love to hear from you! Fill out our contact form below.</h2>
-    <hr>
 
+    <div class="col-md-12 col-8 mx-auto mt-5 mb-2">
+    <h2>We'd love to hear from you! You can reach us at the number or e-mail provided, or fill out our contact form below.</h2>
     <div>
-        <h2>Our Phone Number</h2>
-        <p>206-123-4567</p>
-        <!-- <h6>Hours (CET):</h6>
+
+    <div class="col-md-12 col-8 mx-auto">
+        <h4 class="mt-5">Our Phone Number</h4>
+        <p class="font-weight-bold">206-123-4567</p>
+        <h4>Hours (CET):</h4>
         <tr>
-            <td>Monday-Friday: 8-19</td>
-            <td>Saturday: 10-16</td>
-            <td>Sunday: Closed</td>
-        </tr> -->
+            <td>Monday-Friday: 8-19<hr></td>
+            <td>Saturday: 10-16<hr></td>
+            <td>Sunday: Closed<hr></td>
+        </tr>
     </div>
 
-    <div>
-        <h2>Our E-mail</h2>
-        <p>customersupport@printables.com</p>
+    <div class="col-md-12 col-8 mx-auto">
+        <h4>Our E-mail</h4>
+        <p class="font-weight-bold">customersupport@printables.com</p>
+        <hr>
     </div>
 
     <div">
         <div class="container">
-            <div class="col-12 col-lg-6 order-lg-last mb-5">
-                <div class="col-12 col-lg-6">
-                    <p class="text-muted">Please fill out the form below to complete your order</p>
+            <div class="col-md-12 col-8 mx-auto">
+                <div class="col-12 col-lg-6 mx-auto">
+                    <p class="text-muted font-weight-bold">Please fill out the form below to complete your order</p>
+                    <hr><hr>
                     <form action="" method="POST">
                         {% csrf_token %}
                         {{ form|crispy }}

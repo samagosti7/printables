@@ -17,7 +17,7 @@ def contact_us(request):
             form.save()
             messages.success(request, 'Thank you for contacting us. We will \
                 be in touch shortly.')
-            return redirect(reverse('contact_us'))
+            return redirect(reverse('home'))
 
     context = {
         'form': form
@@ -55,4 +55,4 @@ def newsletter(request):
         'form': form,
     }
 
-    return render(request, 'contact/newsletter.html')
+    return render(request, 'contact/newsletter.html', context)

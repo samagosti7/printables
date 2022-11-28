@@ -22,7 +22,7 @@ class NewsletterForm(forms.ModelForm):
 
     class Meta:
         model = Newsletter
-        fields = ['email', ]
+        fields = '__all__'
         # labels = {
         #     'email': 'E-mail Address'
         # }
