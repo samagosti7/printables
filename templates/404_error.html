@@ -2,5 +2,26 @@
 {% load static %}
 
 {% block page_header %}
-    hello
+  <div class="container header-container">
+    <div class="row">
+      <div class="col"></div>
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="col-md-12 col-8 mx-auto">
+        <div class="col-12 col-lg-6 mx-auto">
+            <h2>
+                Hmm, page not found, it seems that url was invalid.
+            </h2>
+            <button class="btn btn-green btn-lg mx-auto ">
+                Return to home?
+            </button>
+
+        </div>
+    </div>
+</div>
 {% endblock %}
