@@ -22,7 +22,7 @@ body {
         background-size:50%;
   }
 }
-@media (min-width: 1441px) {
+@media (min-width: 2000px) {
     .home {
         background: none;
         background-size:50%;
