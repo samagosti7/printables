@@ -9,28 +9,163 @@
 
 <url>
   <loc>https://printables.herokuapp.com/</loc>
-  <lastmod>2022-11-28T01:08:37+00:00</lastmod>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://printables.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2022-11-28T01:08:37+00:00</lastmod>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://printables.herokuapp.com/bag/</loc>
-  <lastmod>2022-11-28T01:08:37+00:00</lastmod>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=tshirts</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=sweatshirts</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=tshirts,sweatshirts</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=mugs</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=plates</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=mugs,plates</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=phone_cases</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=wallets</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/?category=phone_cases,wallets</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://printables.herokuapp.com/contact/contact_us</loc>
-  <lastmod>2022-11-28T01:08:37+00:00</lastmod>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://printables.herokuapp.com/contact/newsletter</loc>
-  <lastmod>2022-11-28T01:08:37+00:00</lastmod>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/1/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/2/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/3/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/4/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/5/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/6/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/7/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/8/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/9/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/10/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/11/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://printables.herokuapp.com/products/12/</loc>
+  <lastmod>2022-11-28T19:30:33+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
