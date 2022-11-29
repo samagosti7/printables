@@ -283,27 +283,35 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 ### Wire-frames
 
 - Home Page Wireframe
+
 ![home wireframe](documentation_assets/wireframes/wireframes_home.jpg)
 
 - Auth Wireframe
+
 ![auth wireframe](documentation_assets/wireframes/wireframes_auth.jpg)
 
 - Bag Page Wireframe
+
 ![bag wireframe](documentation_assets/wireframes/wireframes_bag.jpg)
 
 - Checkout Page Wireframe
+
 ![checkout wireframe](documentation_assets/wireframes/wireframes_checkout.jpg)
 
 - Contact Page Wireframe
+
 ![contact wireframe](documentation_assets/wireframes/wireframes_contact.jpg)
 
 - Product Detail Page Wireframe
+
 ![detail wireframe](documentation_assets/wireframes/wireframes_product_detail.jpg)
 
-- Verificagion Page Wireframe
+- Verification Page Wireframe
+
 ![verify wireframe](documentation_assets/wireframes/wireframes_verify.jpg)
 
 - Products Page Wireframe
+
 ![products wireframe](documentation_assets/wireframes/wireframes_products.jpg)
 
 
@@ -343,7 +351,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 - Link to signup form if not registered
 
 ### Logout Page
-- Functinoal logout form
+- Functional logout form
 - Confirmation message with backout option
 
 ### Landing Page
@@ -605,7 +613,10 @@ To improve the search engine optimisation (SEO) of the site I:
 
     - "custom printed, custom t-shirt, custom sweatshirt, custom plate, custom mug, print-on-demand, custom image, custom clothing, custom phone case, custom wallet, custom kitchenware, custom design, design-your-own, user-created clothing, user-created-kitchenware, user-created phone case, user-created wallet, personalized gift ideas, personanlized clothing, personalized kitchenware, personalized phone case, personalized wallet, best personalized gifts, best personalized gift ideas, best custom gifts, best custom gift ideas"
 
+
 - I also was selective about using these keywords in the site. In keeping with good SEO habits, I included these keywords strategically in h, em, and strong elements throughout the html documents, making them better suited for the keyword algorithms. For example, the entry message in a giant h3 tab in index.html contains such keywords.
+
+- It is also worth noting that in the social media links at the bottom, rel=noopener was included to make it clear the evaluation algorithms should ignore those links when evaluating my site's quality. 
 
 <a name="marketing"></a>
 
@@ -619,7 +630,7 @@ To improve the search engine optimisation (SEO) of the site I:
 
 - Content marketing specifically through social media is a strong approach for increasing exposure to the customization capacity. Not only will they form rapports with customers, but they can get free exposure through the posting of successfully printed products, etc. This is a good place for targeted advertising as well, pointing their site towards customers who are already interested in customization, etc. 
 
-- printables should form partenerships with entities who could help increase their exposure and volume, like etsy, for example--selling their own items through etsy's interface.
+- Affiliate marketing--printables should form partenerships with entities who could help increase their exposure and volume, like etsy, for example--selling their own items through etsy's interface.
 
 <a name="social-media"></a>
 
@@ -639,27 +650,35 @@ This is an example of what the facebook page might look like.
 [Go to the top](#table-of-contents)
 
 - Home page
+
 ![home page](documentation_assets/images/home.jpg)
 
 - Products page
+
 ![products page](documentation_assets/images/products.jpg)
 
 - Product detail page
+
 ![Product detail page](documentation_assets/images/product_detail.jpg)
 
 - Bag page
+
 ![bag page](documentation_assets/images/bag.jpg)
 
 - Checkout page
+
 ![checkout page](documentation_assets/images/checkout.jpg)
 
 - Contact page
+
 ![contact page](documentation_assets/images/contact.jpg)
 
 - Newsletter page
+
 ![newsletter page](documentation_assets/images/newsletter.jpg)
 
 - Profile page
+
 ![profile page](documentation_assets/images/my_profile.jpg)
 
 - Checkout Success page
@@ -688,6 +707,6 @@ This is an example of what the facebook page might look like.
 
 - All images on the site came from either unsplash, pixabay, or adobe stock.
 
-- The readme skeleton was the same as I used from prior projects, so it comes premade with functional links and navigation.  
+- The readme skeleton was the same as I used from prior projects, so it comes premade with functional links and navigation, originate from user ikelvvv.
 
-As always, thanks to tutor support for being immeasurably helpful, and to my mentory Marcel for his pinpoint advice.
+As always, thanks to tutor support for being patient and helpful, and to my mentor Marcel for his pinpoint advice.
