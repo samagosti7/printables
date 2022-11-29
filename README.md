@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Project 5
 
-A live website can be found [here]().
 
-![website preview]()
+A live website can be found [here](https://printables.herokuapp.com/).
+
+![website preview](documentation_assets/images/home.jpg)
 
 # Table of Contents
 
@@ -201,15 +201,12 @@ w3c css validation
 jshint validation image
 
 ### Python:
-I used the python3 -m flake8 command within GitPod to check for any errors within my Python files. The validator showed multiple "line too long" errors. This was rectified by adding each statement as a new line.
+I used python3 -m flake8 to test code in gitpod, and evaluated problems as they displayed in the terminal for each file.  This allowed me to rememdy some pieces (mostly deleting imports that generate automatically) and add several new lines at the bottom of file when demanded, but some linetoolong errors were kept as those files were finnicky to format, such as in settings.py 
 
-There were also "line too long" errors within my settings.py file but I have chosen to ignore these as this is a very important file.
 
 ## Manual Testing
 
-I have tested my site on Safari and google chrome on multiple devices.
-
-These include:
+The deployed version of the site was tested through the following: 
 -   
 
 ### Navigation Bar
@@ -217,43 +214,86 @@ These include:
 All Pages:
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-
-
-
-### Footer
-
-All Pages:
-TEST            | OUTCOME                          | PASS / FAIL  
---------------- | -------------------------------- | ---------------
-
+Home link | When clicking on the logo in the top left, or on back to home links, the browser redirects me to the home page. | Pass
+Navbar | When clicking through the different nav bar elements, they take me to their respective correct destinations, sorting by category accordingly if necessary. | Pass
+Footer | When clicking the social media links, they open to the correct destinations in a new tab | Pass
+Bag | When clicking the bag icon in the top right, I am taken to the shopping bag page | Pass
+Profile | When clicking the My Account link, I am taken from the dropdown menu to either the profile page or logout page accurately | Pass
+Search | Search bar displays and searches when enter is pressed or the search icon is clicked, and displays results relevant to the search | Pass
+Styling | Styling loads correctly | Pass
 
 ### Home page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-
+Media Queries | Media queries are functioning accurately for the background image | Pass
 
 ### Products page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-
+Products | Products load and display correctly sorted based on sorting parameters | Pass
+Style | Styling loads correctly | Pass
+Links | Clicking on either the image or the product name takes you to the product detail page | Pass
+CRUD | Admins have CRUD functionality on products page | Pass
+Sorting | Sorting bar works as intended, sorting by chosen parameter | Pass
 
 ### Products details page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-
+Style | Styling loads correctly | Pass
+Quantity | Quantity selector accurately ticks quantity either upward or downward with a minimum of 1 | Pass
+Back | Back to shopping link sends me back to products | Pass
+Bag | Add to bag button takes me to my bag | Pass
+Images | Product image and image preview load | Pass
 
 ### Shopping bag page
 TEST            | OUTCOME                          | PASS / FAIL  
-
+--------------- | -------------------------------- | ---------------
+Quantity | Quantity selector and removal option accurately removes or adds item to bag | Pass
+Style | Styling loads correctly | Pass
+Back | Keep shopping button redirects users to products | Pass
+Checkout | Checkout button redirects users to checkout | Pass
+Total | Grand total and subtotals tally accurately | Pass
 
 ### Checkout page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-
+Style | Styling loads correctly | Pass
+Form | Checkout form in its entirety loads correctly | Pass
+Address | Address format from django loads properly, with the accompanying countryfield selector in the dropdown | Pass
+Payment | Card details can be provided and payment functions, facilitated by stripe | Pass
+Back | Adjust bag button takes me to bag | Pass
+Complete order | Button completes order | Pass
+Save | Save delivery checkbox saves info of user | Pass
 
 ### Checkout success page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
+Order details | Order details display properly | Pass 
+Style | Styling loads correctly | Pass
+Order history | Order is added to order history | Pass
+
+### My profile pags
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Update | Delivery info can be edited and updates accordingly | Pass 
+Style | Styling loads correctly | Pass
+Order history | Order history loads correctly | Pass
+
+### Contact US
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Style | Styling loads correctly | Pass
+Contact form | Contact form loads correctly | Pass
+Newsletter form | Newsletter form loads correctly | Pass
+Redirects | Forms redirect to home upon completion, with success message | Pass
+
+### Authorization
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Login | Login function works for verified users and sends message | Pass
+Logout | Logout function works and sends message | Pass
+Register | Unregistered users can signup and receive an email for confirmation on signup | Pass
+Admin | Admin panel loads at appropriate URL, and admin functionality follows if the user is a superuser | Pass
 
 
 <a name="deployment"></a>
