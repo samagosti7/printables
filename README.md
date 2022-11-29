@@ -4,9 +4,9 @@
 
 Project 5
 
-A live website can be found [here](https://kelvin-steakout.herokuapp.com/).
+A live website can be found [here]().
 
-![website preview](documentation_assets/images/website_preview.png)
+![website preview]()
 
 # Table of Contents
 
@@ -67,11 +67,6 @@ Opportunity/Problem/Feature| Importance| Viability/Feasibility
 ## Scope
 minimum viable product--extra
 
-### Phase 1
-- 
-
-### Phase 2
-- 
 
 <a name="structure"></a>
 
@@ -99,9 +94,6 @@ minimum viable product--extra
 
 [Go to the top](#table-of-contents)
 
-### Colours
-
- - 
 
 ### Typography
 
@@ -151,9 +143,6 @@ minimum viable product--extra
 ### Newsletter Subscribe Page
 - features
 
-### Newsletter Unsubscribe Page
--
-
 <a name="technologies-used"></a>
 
 ## 3. Technologies Used
@@ -188,6 +177,9 @@ minimum viable product--extra
     -   Google fonts were used to import the "Be Vietnam Pro" font into the style.css file which is used on all pages throughout the project.
 -   [GitHub](https://github.com/)
     -   GitHub was used to store the project's code after being pushed from Git.
+-   [Stripe](https://github.com/)
+    -   GitHub was used to store the project's code after being pushed from Git.
+
 
 <a name="testing"></a>
 
@@ -206,7 +198,7 @@ w3c markup validation
 w3c css validation
 
 ### JavaScript:
-jshint valodation image
+jshint validation image
 
 ### Python:
 I used the python3 -m flake8 command within GitPod to check for any errors within my Python files. The validator showed multiple "line too long" errors. This was rectified by adding each statement as a new line.
@@ -262,8 +254,6 @@ TEST            | OUTCOME                          | PASS / FAIL
 ### Checkout success page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-R
-
 
 
 <a name="deployment"></a>
@@ -274,17 +264,15 @@ R
 I used the terminal to deploy my project locally. To do this I had to:
 
 1. Create a repository on GitHub.
-2. Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
-3. Open the terminal within GitPod
-4. Enter "python3 manage.py runserver into the terminal.
-5. Go to localhost address on my web browser.
-6. All locally saved changes will show up here.
+2. Open repo via an editor, GitPod 
+3. Enter "python3 manage.py runserver into the terminal to access a locally hosted port
+ 
 
 For the final deployment to Heroku, I had to:
 
 1. Create Heroku App
-2. Install dj_database_url and psycopg2-binary in my local environment
-3. Freeze requirements.txt file
+2. Install dj_database_url and psycopg2 in my local environment
+3. Complete requirements.txt file with all the necessary installments for the project
 4. In settings.py import dj_database_url
 5. Back up the local database using "./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json" in the terminal window.
 6. Comment out the local default database
@@ -374,14 +362,11 @@ images of end product
 
 ### Code
 
--
+ - Boutique Ado
+
 
 
 ### Content
 
 - All images on the site came from 
-
-
-
-### Project Acknowledgements
--
+- Readme Skeleton

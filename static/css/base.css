@@ -1,3 +1,5 @@
+/* Project level css file */
+
 html {
     height: 100%;
 }
@@ -13,15 +15,16 @@ body {
 .home {
     background: url('/media/background_image.jpg') no-repeat center right fixed;
     background-size: 50%;
-    /* height: 80%; */
 }
 
+/* Home Media Queries */
 @media (max-width: 767px) {
     .home {
         background: none;
         background-size:50%;
   }
 }
+
 @media (min-width: 2000px) {
     .home {
         background: none;
@@ -59,7 +62,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important; 
     border: 1px solid black;
 }
 
@@ -193,7 +196,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* -------------------------------- Media Queries */
+/* -------------------------------- Other Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -205,8 +208,8 @@ input[name='q']::placeholder {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem; 
+    color: #6c757d; 
 }
 
 .allauth-form-inner-content input {
@@ -293,12 +296,10 @@ input[name='q']::placeholder {
         right: 0;
         left: 0;
         z-index: 1030;
-        /* background-color: #F0A868; */
     }
 
     .header-container {
         padding-top: 164px;
-        /* background-color: #F0A868; */
     }
 }
 
@@ -306,7 +307,6 @@ input[name='q']::placeholder {
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
-        /* background-color: #F0A868; */
     }
 
     body {
@@ -355,7 +355,6 @@ input[name='q']::placeholder {
 footer {
     background-color: #E4FFE1;
     width: 100%
-    /* color: #fff; */
 }
 
 footer ul {
@@ -365,6 +364,10 @@ footer ul {
 }
 
 footer ul > li {
+    display:inline;
+}
+
+footer ul > li > p {
     display:inline;
 }
 

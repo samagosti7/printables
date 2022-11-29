@@ -8,7 +8,8 @@ class Contact(models.Model):
     name = models.CharField(blank=False, null=False, max_length=99)
     email = models.EmailField(blank=False, null=False, max_length=199)
     date = models.DateTimeField(auto_now_add=True)
-    topic = models.CharField(max_length=50, null=False, blank=False, default='')
+    topic = models.CharField(max_length=50, null=False, blank=False,
+                             default='')
     content = models.TextField(blank=False, null=False, max_length=500)
 
 
