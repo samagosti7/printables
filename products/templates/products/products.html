@@ -9,6 +9,7 @@
     </div>
 {% endblock %}
 
+<!-- Products page, with sorting and filtering options -->
 {% block content %}
     <div class="overlay"></div>
     <div class="container-fluid">
@@ -23,6 +24,7 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
+        <!-- Sorting -->
         <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
@@ -41,6 +43,7 @@
                             </select>
                         </div>
                     </div>
+                    <!-- Categories sort -->
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
@@ -93,6 +96,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Styling based on number of products for responsivity -->
                         {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>
