@@ -3,20 +3,27 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True,
-                                 on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
-                                 blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
-    image_preview = models.ImageField(null=True, blank=True)
+STATUS = ((0, "Draft"), (1, "Published"))
+
+
+class Post(models.Model):
+    """
+        Post Model for Blog
+    """
+
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
+    description = models.TextField(blank=False)
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    title = models.CharField(max_length=300, unique=True)
+    slug = models.SlugField(max_length=300, unique=True)
+    status = models.IntegerField(choices=STATUS, default=1)
+
+    class Meta:
+        """
+            Metadata for Post Model
+        """
+        ordering = ['-created_on']
 
     def __str__(self):
-        return self.name
-
+        return self.title
