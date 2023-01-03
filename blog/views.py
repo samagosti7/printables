@@ -46,4 +46,16 @@ def delete_post(request, Post):
         messages.success("Post deleted.")
 
 
+def blog(request):
+    """
+        Blog post list view
+    """
+
+    post_list = Post.objects.filter(status=1).order_by("-created_on")
+
+    context = {
+        "post_list": post_list
+    }
+
+    return render(request, "blog/blog.html", context)
 
