@@ -1,1 +1,43 @@
-hello
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <div class="col-md-12 col-8 mx-auto mt-5 mb-2">
+    <h2 class="text-center">Welcome to our blog!  Here we share some of our best creation stories, and hope to give you some ideas. </h2>
+    <div>
+
+
+    <div">
+        <div class="container">
+            <div class="col-md-12 col-8 mx-auto">
+                <div class="col-12 col-lg-6 mx-auto">
+                    <hr>
+                    <h2 class="font-weight-bold font-italic text-center">Our Blog Posts</h2>
+                    <hr><hr>
+                    <div>
+                    {% for post in posts %}
+                    <div class="card-body border-black">
+                        <h3>Title: {{ post.title }}</h3>
+                        <h3>Author: {{ post.author }}/h3>
+                        <h3>Description: {{ post.description }}</h3>
+                        <a href="{% url 'post_detail' post.slug %}" class="text-muted">View This Article</a>
+                    </div>
+                    {% endfor %}
+                    </div>
+                </div>                 
+            </div>
+        </div>
+    </div>
+{% endblock %}
