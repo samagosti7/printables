@@ -86,7 +86,7 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
+                                    <a href="{% url 'add_post' %}" class="dropdown-item">Manage Site Blog</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -180,6 +180,9 @@
                 </li>
                 <li>
                     <a href="https://www.youtube.com" target=_blank rel="noopener" aria-label="Visit our Youtube (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href= "{% url = 'blog'%}" target=_blank rel="noopener" aria-label="Visit our Blog (opens in a new tab)">Blog</a>
                 </li>
             </ul>
     </footer>
