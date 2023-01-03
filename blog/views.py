@@ -59,3 +59,15 @@ def blog(request):
 
     return render(request, "blog/blog.html", context)
 
+def post_detail(request):
+    """
+        Blog post detail view
+    """
+
+    post = get_object_or_404(Post, slug=post)
+
+    context = {
+        "post": post
+    }
+
+    return render(request, "blog/post_detail.html", context)
