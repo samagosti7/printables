@@ -6,7 +6,9 @@
     <div class="container header-container">
         <div class="row">
             <div class="col">
-
+                <h1>
+                    {{ post.title }}
+                </h1>
             </div>
         </div>
     </div>
@@ -15,40 +17,17 @@
 {% block content %}
 
     <div class="col-md-12 col-8 mx-auto mt-5 mb-2">
-    <h2>We'd love to hear from you! You can reach us at the number or e-mail provided, or fill out our contact form below.</h2>
+    <h6 class="text-center text-muted">{{ post.author }} | {{ post.created_on }} </h6>
     <div>
 
-    <div class="col-md-12 col-8 mx-auto">
-        <h4 class="mt-5">Our Phone Number</h4>
-        <p class="font-weight-bold">206-123-4567</p>
-        <h4>Hours (CET):</h4>
-        <table>
-                <tr>Monday-Friday: 8-19<hr></tr>
-                <tr>Saturday: 10-16<hr></tr>
-                <tr>Sunday: Closed<hr></tr>
-        </table>
-    </div>
 
-    <div class="col-md-12 col-8 mx-auto">
-        <h4>Our E-mail</h4>
-        <p class="font-weight-bold">customersupport@printables.com</p>
-        <hr>
-    </div>
-
-    <div">
+    <div>
         <div class="container">
             <div class="col-md-12 col-8 mx-auto">
                 <div class="col-12 col-lg-6 mx-auto">
-                    <p class="text-muted font-weight-bold">Please fill out the form below to complete the contact form</p>
-                    <hr><hr>
-                    <form action="" method="POST">
-                        {% csrf_token %}
-                        {{ form|crispy }}
-                        <button class="mb-2">
-                            Send
-                        </button>
-                        <hr>
-                    </form>
+                    <div>
+                    {{ post.body | safe }}
+                    </div>
                 </div>                 
             </div>
         </div>

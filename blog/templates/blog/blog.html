@@ -19,7 +19,7 @@
     <div>
 
 
-    <div">
+    <div>
         <div class="container">
             <div class="col-md-12 col-8 mx-auto">
                 <div class="col-12 col-lg-6 mx-auto">
@@ -27,12 +27,12 @@
                     <h2 class="font-weight-bold font-italic text-center">Our Blog Posts</h2>
                     <hr><hr>
                     <div>
-                    {% for post in posts %}
-                    <div class="card-body border-black">
+                    {% for post in post_list %}
+                    <div class="card-body border-black mx-auto">
                         <h3>Title: {{ post.title }}</h3>
-                        <h3>Author: {{ post.author }}/h3>
+                        <h3>Author: {{ post.author }}</h3>
                         <h3>Description: {{ post.description }}</h3>
-                        <a href="{% url 'post_detail' post.slug %}" class="text-muted">View This Article</a>
+                        <a href="{% url 'post_detail' post.slug %}" class="text-primary">View This Article</a>
                     </div>
                     {% endfor %}
                     </div>
