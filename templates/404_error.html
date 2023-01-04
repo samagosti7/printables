@@ -17,9 +17,11 @@
             <h2>
                 Hmm, page not found, it seems that url was invalid.
             </h2>
-            <button class="btn btn-green btn-lg mx-auto ">
-                Return to home?
-            </button>
+            <a href="{% url 'home' %}">
+              <button class="btn btn-green btn-lg mx-auto ">
+                  Return to home?
+              </button>
+            </a>
 
         </div>
     </div>
