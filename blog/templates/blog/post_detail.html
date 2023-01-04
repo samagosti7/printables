@@ -6,8 +6,8 @@
     <div class="container header-container">
         <div class="row">
             <div class="col">
-                <h1>
-                    {{ post.title }}
+                <h1 class="text-center mx-auto">
+                    {{ post.title }} 
                 </h1>
             </div>
         </div>
@@ -16,20 +16,26 @@
 
 {% block content %}
 
-    <div class="col-md-12 col-8 mx-auto mt-5 mb-2">
-    <h6 class="text-center text-muted">{{ post.author }} | {{ post.created_on }} </h6>
-    <div>
-
-
     <div>
         <div class="container">
-            <div class="col-md-12 col-8 mx-auto">
-                <div class="col-12 col-lg-6 mx-auto">
-                    <div>
+            <div class="mx-auto">
+                <div class="mx-auto border-black">
+                    <div class="lead">
                     {{ post.body | safe }}
                     </div>
                 </div>                 
             </div>
         </div>
     </div>
+
+    <div class="col-md-12 col-8 mx-auto mt-5 mb-2">
+        <h6 class="text-left text-muted"> Post written by {{ post.author }} on {{ post.created_on }} </h6>
+        {% if request.user.is_superuser %} 
+            <div class="text-center">
+                <a href="{% url 'delete_post' post.slug %}">
+                    <button>Delete Post</button>
+                </a>
+            </div>
+        {% endif %}
+    <div>
 {% endblock %}

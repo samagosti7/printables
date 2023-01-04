@@ -92,6 +92,8 @@ Delete a site user as an admin | 2 | 5
  - 
 
 ### Database Models
+## Model Schema
+![Model Schema](documentation_assets/images/model_schema.jpg)
 - Checkout Models
 ```
 class Order(models.Model):
@@ -458,6 +460,8 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     -   GitHub was used to store the project's code after being pushed from Git.
 -   [Stripe](https://stripe.com/)
     -   Stripe was used to faciliate the payment system.
+-   [DrawSQL](https://drawsql.app/)
+    -   DrawSQL was used to generate the model schema.
 
 
 <a name="testing"></a>
@@ -715,6 +719,7 @@ This is an example of what the facebook page might look like.
 [Go to the top](#table-of-contents)
 - Slight indent on contact us page in mobile view
 - Custom 404 isn't rendered on a bad URL--citing that debug is still true, even though env.py is in the gitignore and neither debug nor development are true in config vars in heroku
+- Small margin errors in footer, and it doesn't stick fully to the bottom of the page on very large devices.
 
 <a name="credits"></a>
 
@@ -732,5 +737,7 @@ This is an example of what the facebook page might look like.
 - All images on the site came from either unsplash, pixabay, or adobe stock.
 
 - The readme skeleton was the same as I used from prior projects, so it comes premade with functional links and navigation, originate from user ikelvvv.
+
+- The content of the test post came from a wikipedia article about mugs. 
 
 As always, thanks to tutor support for being patient and helpful, and to my mentor Marcel for his pinpoint advice.

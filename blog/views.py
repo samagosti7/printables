@@ -20,7 +20,10 @@ def add_post(request):
                 messages.success(request, "Post submitted")
                 return redirect(reverse("blog"))
             else:
-                form = NewPostForm()
+                messages.error(
+                    request, 'Form invalid')
+        else:
+            form = NewPostForm()
     else:
         messages.error(request, "You are not authorized to access that.")
         return redirect(reverse("blog"))
@@ -33,17 +36,20 @@ def add_post(request):
 
 
 @login_required()
-def delete_post(request, Post):
+def delete_post(request, post):
     """
         Delete Blog Post
     """
     if request.user.is_superuser:
         post = get_object_or_404(Post, slug=post)
         post.delete()
-        messages.success("Post deleted.")
+        messages.success(request, "Post deleted.")
+        return redirect(reverse("blog"))
     else:
         messages.error(request, "You are not authorized to access that.")
         return redirect(reverse("blog"))
+    
+    
 
 
 def blog(request):
