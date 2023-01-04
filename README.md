@@ -727,6 +727,7 @@ This is an example of what the facebook page might look like.
 - Slight indent on contact us page in mobile view
 - Custom 404 isn't rendered on a bad URL--citing that debug is still true, even though env.py is in the gitignore and neither debug nor development are true in config vars in heroku
 - Small margin errors in footer, and it doesn't stick fully to the bottom of the page on very large devices.
+- Cancel button on add blog post isn't compatible with the form requirements.
 
 <a name="credits"></a>
 
@@ -743,7 +744,7 @@ This is an example of what the facebook page might look like.
 
 - All images on the site came from either unsplash, pixabay, or adobe stock.
 
-- The readme skeleton was the same as I used from prior projects, so it comes premade with functional links and navigation, originate from user ikelvvv.
+- The readme skeleton was the same as I used from prior projects, so it comes premade with functional links and navigation, originating from user ikelvvv.
 
 - The content of the test post came from a wikipedia article about mugs. 
 
