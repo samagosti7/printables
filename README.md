@@ -725,7 +725,6 @@ This is an example of what the facebook page might look like.
 # 10. Known Bugs
 [Go to the top](#table-of-contents)
 - Slight indent on contact us page in mobile view
-- Custom 404 isn't rendered on a bad URL--citing that debug is still true, even though env.py is in the gitignore and neither debug nor development are true in config vars in heroku
 - Small margin errors in footer, and it doesn't stick fully to the bottom of the page on very large devices.
 - Cancel button on add blog post isn't compatible with the form requirements.
 
