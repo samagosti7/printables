@@ -572,6 +572,16 @@ Contact form | Contact form loads correctly | Pass
 Newsletter form | Newsletter form loads correctly | Pass
 Redirects | Forms redirect to home upon completion, with success message | Pass
 
+### Blog
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Style | Styling of all blog templates loads correctly | Pass
+Add post form | Page and post form load correctly, and only admins can create posts | Pass
+Blog view | Blog posts load and can be viewed by the user | Pass
+Post Detail | Individual posts can be viewed speficially.  | Pass
+Links | Navigation throughout posts and back to blog fucntion correctly. |  Pass
+
+
 ### Authorization
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
@@ -590,30 +600,30 @@ The final version of the project was deployed to heroku.  A step by step walkthr
 
 1. Create a heroku account, if one is not owned already.  Create a new app on Heroku, and in my case, buy the minimum, 5$ a month plan to support the dyno. 
 2. The requisite installments for the project must now be installed within the interface application, which is gitpod in my case. This entails running pip3 install -r "requirements.txt" with every required installation added into the requirements.txt file.  Specifically, dj_database_url and psycopg2 are necessary to connect to your external datbase here. 
-4. In settings.py import dj_database_url. Then comment out the default database, and add the unique database url for your project, in my case an elephantSQL URL. Run migrations to apply this new URL.  
-8. Create a SuperUser for this Postgres database.  In Elephant sql, you will need to execute the auth_user option in table queries to confirm your database. 
-9. Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the Django app. The requisite line will look like this "web: gunicorn printables.wsgi:application", with your unique app name before the .wsgi.
-10. Disable Heroku collect static in config vars in the settings of your heroku app.  Also add a new unique secret key to the variables here. 
-11. Add the Heroku hostname to allowed hosts in settings.py
-13. Move secret key in settings.py to a ceated env.py file
-14. Set debug to True only if the environment is a development environment
-15. Run the python3 manage.py loaddata command for all fixtures in order to import your projects data into your databases. If one fixture relies on another, in my case products has a "category" which is a separate fixture, make sure to load the base fixture first, so the one reliant on it has something to reference. 
-16. Commit and push to GitHub and Heroku 
-16. Create an AWS account and a new S3 bucket. You will need to select the closest region to you and follow other basic steps to complete the bucket. You will also need to turn on static website hosting in the properties tab to allow the hosting of your site. 
-17. Go to the bucket policy tab, creating a new s3 bucket policy. You will want to create a new policy, allowing all principals by selecting the star option. You will need the Amazon Resource Name from the prior AWS account tab to copy into the ARN box.  Then generate the policy.
-18. In the S3 navitagion, navigate to the access control list tab and allow public access. 
-19. Create a user and group to use your bucket using Amazon IAM, Identity and Access management. In the services menu of AWS select IAM. 
-20. In IAM, first create a group and name it. Then go to the JSON tab and import the prebuilt s3 full access policy. Paste the ARN from the bucket prior into the policy to allow it access only to the bucket instead of everything. 
-21. In IAM, select the created group, and attach the newly created policy. Then navigate to the users page and create a new user, giving them programmatic access and putting them in your created group. Now download the user CSV file which contains your user access key and secret key which will need to be in config vars in heroku. Once dowloaded, add each of these separately into config vars.  
-22. Now attach django to this bucket. You will need to install boto3 and django-storages and add them to requirements.txt to do this. 
-23. Add an if statment in settings.py checking for USE_AWS in the environment. This will trigger for heroku but not locally. If the check passes,  define the AWS bucket name, region name, and set the access key and secret key to be obtained from the environment. Those are the keys already added to heroku config vars. Also add now in heroku config vars a USE_AWS variable set to true.  
-24. In settings.py, define the custom domain name which will be an f string of the bucket name, followed by .s3.amazonaws.com.
-22. Create a new file called custom storages, and import settings from django.conf and the s3boto3 storage class from django.storages. Create StaticStorage and MediaStorage classes.
-23. Then return to settings.py and add a statement specifying the location to store static and media files. 
-24. Override the STATIC_URL and MEDIA_URL URLS with your custom domain URLS in settings.py. This step and the two prior can be viewedtheir respective sections in the settings.py file, to use as guidance for formatting.
+3. In settings.py import dj_database_url. Then comment out the default database, and add the unique database url for your project, in my case an elephantSQL URL. Run migrations to apply this new URL.  
+4. Create a SuperUser for this Postgres database.  In Elephant sql, you will need to execute the auth_user option in table queries to confirm your database. 
+5. Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the Django app. The requisite line will look like this "web: gunicorn printables.wsgi:application", with your unique app name before the .wsgi.
+6. Disable Heroku collect static in config vars in the settings of your heroku app.  Also add a new unique secret key to the variables here. 
+7. Add the Heroku hostname to allowed hosts in settings.py
+8. Move secret key in settings.py to a ceated env.py file
+9. Set debug to True only if the environment is a development environment
+10. Run the python3 manage.py loaddata command for all fixtures in order to import your projects data into your databases. If one fixture relies on another, in my case products has a "category" which is a separate fixture, make sure to load the base fixture first, so the one reliant on it has something to reference. 
+11. Commit and push to GitHub and Heroku 
+12. Create an AWS account and a new S3 bucket. You will need to select the closest region to you and follow other basic steps to complete the bucket. You will also need to turn on static website hosting in the properties tab to allow the hosting of your site. 
+13. Go to the bucket policy tab, creating a new s3 bucket policy. You will want to create a new policy, allowing all principals by selecting the star option. You will need the Amazon Resource Name from the prior AWS account tab to copy into the ARN box.  Then generate the policy.
+14. In the S3 navitagion, navigate to the access control list tab and allow public access. 
+15. Create a user and group to use your bucket using Amazon IAM, Identity and Access management. In the services menu of AWS select IAM. 
+16. In IAM, first create a group and name it. Then go to the JSON tab and import the prebuilt s3 full access policy. Paste the ARN from the bucket prior into the policy to allow it access only to the bucket instead of everything. 
+17. In IAM, select the created group, and attach the newly created policy. Then navigate to the users page and create a new user, giving them programmatic access and putting them in your created group. Now download the user CSV file which contains your user access key and secret key which will need to be in config vars in heroku. Once dowloaded, add each of these separately into config vars.  
+18. Now attach django to this bucket. You will need to install boto3 and django-storages and add them to requirements.txt to do this. 
+19. Add an if statment in settings.py checking for USE_AWS in the environment. This will trigger for heroku but not locally. If the check passes,  define the AWS bucket name, region name, and set the access key and secret key to be obtained from the environment. Those are the keys already added to heroku config vars. Also add now in heroku config vars a USE_AWS variable set to true.  
+20. In settings.py, define the custom domain name which will be an f string of the bucket name, followed by .s3.amazonaws.com.
+21. Create a new file called custom storages, and import settings from django.conf and the s3boto3 storage class from django.storages. Create StaticStorage and MediaStorage classes.
+22. Then return to settings.py and add a statement specifying the location to store static and media files. 
+23. Override the STATIC_URL and MEDIA_URL URLS with your custom domain URLS in settings.py. This step and the two prior can be viewedtheir respective sections in the settings.py file, to use as guidance for formatting.
 24. Commit and push to GitHub and Heroku
 25. In the S3 bucket create a new folder for media. Here, upload all project media and images. 
-28. in Stripe, you'll have created a webhook endpoint. This will also have given you usable secret keys and access keys for your project.  Add these keys with their respective names to Heroku config variables. These will be the environment variables referenced in the stripe section of settings.py. 
+26. in Stripe, you'll have created a webhook endpoint. This will also have given you usable secret keys and access keys for your project.  Add these keys with their respective names to Heroku config variables. These will be the environment variables referenced in the stripe section of settings.py. 
 
 
 <a name="seo"></a>
