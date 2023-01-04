@@ -424,6 +424,13 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 ### Contact Form Page
 - Functional contact form page
 
+### Blog Page
+- Functional post creation form for admins only.
+- Page to view list of all submitted posts. 
+- Link from submitted posts to the post detail view.
+- Button to delete posts on the post detail view for admins only. Posts can also be managed via the admin panel.
+
+
 <a name="technologies-used"></a>
 
 ## 3. Technologies Used
